@@ -16,10 +16,10 @@ import org.springframework.stereotype.Service;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String firstName;
-    private String lastName;
-    private String email;
+    public Long id;
+    public String firstName;
+    public String lastName;
+    public String email;
     public Long getId() {
         return id;
     }
