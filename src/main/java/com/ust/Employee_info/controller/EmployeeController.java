@@ -14,7 +14,7 @@ import java.util.Optional;
 @RequestMapping("/api/employees")
 public class EmployeeController {
     @Autowired
-    private EmployeeService employeeService;
+    public EmployeeService employeeService;
 
     @GetMapping
     public List<Employee> getAllEmployees() {
